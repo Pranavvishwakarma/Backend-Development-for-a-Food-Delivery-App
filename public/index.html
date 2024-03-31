@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Pricing Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h2>Calculate Delivery Price</h2>
+    <form id="priceForm">
+        <input type="text" id="zone" placeholder="Zone" required>
+        <input type="text" id="organization_id" placeholder="Organization ID" required>
+        <input type="number" id="total_distance" placeholder="Total Distance (km)" required>
+        <select id="item_type" required>
+            <option value="">Select Item Type</option>
+            <option value="perishable">Perishable</option>
+            <option value="non-perishable">Non-Perishable</option>
+        </select>
+        <button type="submit">Calculate Price</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
